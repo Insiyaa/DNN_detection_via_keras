@@ -1,9 +1,9 @@
 from Global_parameters import *
 
-channel_train = None
-train_size = None
-channel_test = None
-test_size = None
+channel_train = np.load('/kaggle/input/winnermodels/Data_npy/A1/channel_train.npy')
+train_size = channel_train.shape[0]
+channel_test = np.load('/kaggle/input/winnermodels/Data_npy/A1/channel_test.npy')
+test_size = channel_test.shape[0]
 
 
 def training_gen(bs, SNRdb = 20):
