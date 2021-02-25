@@ -1,9 +1,9 @@
 from Global_parameters import *
 
 channel_train = None
-# train_size = channel_train.shape[0]
+train_size = None
 channel_test = None
-# test_size = channel_test.shape[0]
+test_size = None
 
 
 def training_gen(bs, SNRdb = 20):
